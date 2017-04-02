@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Fatec Shop - Novo Usuario</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <h1>Cadastro de Novo Usuario</h1>
+        <form method="POST" action="incluir_cliente.jsp">
+        <table border="1">
+            <tr>
+                <td>Nome:*</td>
+                <td>
+                    <input type="text" name="nome" size="50" maxlength="50" required>
+                </td>
+            </tr>
+                <tr>
+                    <td>Endereço:</td>
+                    <td>
+                        <input type="text" name="endereco" size="50" maxlength="50">
+                    </td>
+                </tr>
+                <tr>
+                    <td>Cidade:</td>
+                    <td>
+                        <input type="text" name="cidade" size="50" maxlength="50">
+                    </td>                                       
+                </tr>
+                <tr>
+                    <td>Estado:</td>
+                    <td>
+                        <select name="estado">
+                            <option> </option>
+                            <option>MG</option>
+                            <option>PR</option>
+                            <option>RJ</option>
+                            <option selected>SP</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Email:*</td>  
+                <td>
+                    <input type="email" name="email" size="50" maxlength="50" required>
+                </td>
+                </tr>
+            <tr>
+            <td>Senha:*</td>
+            <td>
+                <input type="password" name="senha" size="30" maxlength="30" required>
+            </td>
+        </tr>
+        <td colspan="2"><input type="submit"></td>
+        </tr>
+           </table>
+        </form>
+    </body>
+</html>
